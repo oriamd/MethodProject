@@ -20,13 +20,13 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{2FC1724C-9F66-4D65-9BC8-F27A7345104D}</ProjectGuid>
-    <RootNamespace>Common</RootNamespace>
+    <ProjectGuid>{F4DEFA61-AE8F-4C90-9110-39508A88E764}</ProjectGuid>
+    <RootNamespace>Application</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
-    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v141</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
@@ -111,15 +111,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Control.h" />
-    <ClInclude Include="EventEngine.h" />
-    <ClInclude Include="Graphics.h" />
-    <ClInclude Include="MouseListener.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="Control.cpp" />
-    <ClCompile Include="EventEngine.cpp" />
-    <ClCompile Include="Graphics.cpp" />
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Button\Button.vcxproj">
@@ -130,6 +122,9 @@
     </ProjectReference>
     <ProjectReference Include="..\ComboBox\ComboBox.vcxproj">
       <Project>{aaaf75f0-5709-4cce-9391-a47a7986d2b3}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.vcxproj">
+      <Project>{2fc1724c-9f66-4d65-9bc8-f27a7345104d}</Project>
     </ProjectReference>
     <ProjectReference Include="..\Label\Label.vcxproj">
       <Project>{e40e8d0e-ecbc-43d9-81e1-03e101be044f}</Project>
@@ -148,6 +143,9 @@
     </ProjectReference>
     <ProjectReference Include="..\TextBox\TextBox.vcxproj">
       <Project>{8751bc44-1cdc-42ae-bd93-6d670b33124c}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\UnitTest\UnitTest.vcxproj">
+      <Project>{ebc3c460-8186-4b4d-8b2d-56127fa14ec6}</Project>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

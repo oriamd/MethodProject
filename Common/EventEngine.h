@@ -15,4 +15,5 @@ public:
 	EventEngine(DWORD input = STD_INPUT_HANDLE, DWORD output = STD_OUTPUT_HANDLE);
 	virtual ~EventEngine();
 	void run(Control &c);
+	int getNumber() { return 5; };
 };
