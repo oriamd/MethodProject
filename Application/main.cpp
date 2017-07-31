@@ -101,8 +101,6 @@ int main(int argc, char **argv)
 	clhobbies.SetForeground(ForegroundColor::Green);
 	main.AddControl(clhobbies, 20, 13);
 
-
-
 	Control::setFocus(cCountry);
 	EventEngine engine;
 	engine.run(main);
